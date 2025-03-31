@@ -8,7 +8,7 @@ from werkzeug.exceptions import HTTPException
 app = Flask(__name__)
 
 # MongoDB configuration
-mongo_uri = os.getenv("MONGO_URI", "mongodb+srv://harinisri01:hs5229@cluster0.34bgy.mongodb.net/MyDatabase?retryWrites=true&w=majority&appName=Cluster0")
+mongo_uri = os.getenv("MONGO_URI")
 
 # Connection handling optimized for Lambda
 client = None
